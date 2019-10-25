@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Cretae New Project"
+            android:id="@+id/createproject"
+            android:icon="@drawable/ic_create_black_24dp"
+            />
+
+        <item android:title="Project List"
+            android:id="@+id/list"
+            android:icon="@drawable/ic_list_black_24dp"
+            />
+        <item android:title="Const Project Progress"
+            android:id="@+id/conprogress"
+            android:icon="@drawable/ic_data_usage_black_24dp"
+            />
+        <item android:title="Main Project Progress"
+            android:id="@+id/mainprogress"
+            android:icon="@drawable/ic_data_usage_black_24dp"
+            />
+
+        <item android:title="Site Visit"
+            android:id="@+id/site"
+            android:icon="@drawable/ic_add_location_black_24dp"
+            />
+
+        <item android:title="Fill Inspection Form"
+            android:id="@+id/form"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            />
+    </group>
+
+    <item android:title="Utilities">
+        <menu>
+
+            <item android:title="ChatBox"
+                android:id="@+id/chat"
+                android:icon="@drawable/ic_chat_black_24dp"
+                />
+
+            <item android:title="Setting"
+                android:id="@+id/setting"
+                android:icon="@drawable/ic_settings_applications_black_24dp"
+                />
+            <item android:title="Logout"
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_person_black_24dp"
+                />
+        </menu>
+
+    </item>
+</menu>
