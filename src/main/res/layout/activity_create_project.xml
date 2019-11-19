@@ -1,11 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
     tools:context=".CreateProject">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Project Information"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+
+        <LinearLayout
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Area" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Campus Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="H.Secondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Covered Area" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Region" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Plot Size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Secondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Project Code" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/manageby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/colorPrimary"
+        android:text=" Managed By"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+
+        <LinearLayout
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Project Incharge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Execution" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Account Manager" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/furtherdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/colorPrimary"
+        android:text=" Furthur Detailed "
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+
+        <LinearLayout
+            android:id="@+id/label5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Session Start Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Builed Year" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Requestion Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Donor Commitment  Date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+           <DatePicker
+               android:layout_width="80dp"
+               android:layout_height="30dp"
+               android:background="@color/white"
+               android:padding="5dp"/>
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <DatePicker
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="5dp"/>
+
+            <DatePicker
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
