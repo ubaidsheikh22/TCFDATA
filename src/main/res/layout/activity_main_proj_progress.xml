@@ -6,4 +6,443 @@
     android:layout_height="match_parent"
     tools:context=".MainProjProgress">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="Maintanance Project Process"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp">
+
+
+                <TextView
+                    android:id="@+id/lblselectReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginLeft="76dp"
+
+                    android:layout_marginTop="4dp"
+                    android:text="Select Region"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lblselectReg"
+                    tools:layout_editor_absoluteY="3dp" />
+
+                <TextView
+                    android:id="@+id/selloc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Select Location"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/pcp_sellocdrop"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="208dp"
+                    android:layout_marginLeft="208dp"
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#A8E26F"
+
+                android:gravity="center"
+                android:text="donor_commits"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etdonor-com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Request for Build Mobilization Advance"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ed-rbma"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="RMD requests donor for Build Mobilization Advance (25%) Planned Start Date: 24/11/2019 ----- Planned Complete Date: 26/11/2019 Actual Start Date: 20/11/2019 ----- Actual Complete Date: 20/11/2019 "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text=" Documents for Approval "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ed-dfa"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="RMD prepares cover letter and summary for Signature by RM, HOE, VP, CEO Planned Start Date: 27/11/2019 ----- Planned Complete Date: 29/11/2019 Actual Start Date: 20/11/2019 ----- Actual Complete Date: 20/11/2019"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text=" EC's Approval"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ed-eca"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="VP seeks approval from EC Planned Start Date: 30/11/2019 ----- Planned Complete Date: 04/12/2019 Actual Start Date: 20/11/2019 ----- Actual Complete Date: 20/11/2019"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Site Survey and Land documents"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ed-ssld"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="RMD requests relevant documents from Region, Engineering and Real Estate Planned Start Date: 21/11/2019 ----- Planned Complete Date: 27/11/2019 Actual Start Date: 20/11/2019 ----- Actual Complete Date: 20/11/2019"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Architectural Drawing"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ed-ad"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="VP seeks approval from EC Planned Start Date: 30/11/2019 ----- Planned Complete Date: 04/12/2019 Actual Start Date: 20/11/2019 ----- Actual Complete Date: 20/11/2019"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Soil Testing    "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-st"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Engineering conducts Soil Testing Planned Start Date: 28/12/2019 ----- Planned Complete Date: 26/01/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Structural Drawings"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-sd"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Engineering prepares Structural Drawings Planned Start Date: 27/01/2020 ----- Planned Complete Date: 25/02/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="BOQ, Tender Documents    "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-boq-tender-documents"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Engineerings prepares BOQ and Tender Documents Planned Start Date: 26/02/2020 ----- Planned Complete Date: 06/03/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="GO Ahead Signal  "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-go-ahead-signal"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="RMD checks for approval Planned Start Date: 07/03/2020 ----- Planned Complete Date: 07/03/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Tender, Letter of Awards    "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-tender-letter-of-awards"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Tender, Contractor Selection, Letter of Award and Request for Insurance Bond Planned Start Date: 08/03/2020 ----- Planned Complete Date: 22/03/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Insurance Bond"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-insurance-bond"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Contractor presents insurance bond for mobilization advance to Engineering Planned Start Date: 23/03/2020 ----- Planned Complete Date: 25/03/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Engineering signs request"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Engineering signs request and forwards to Finance Planned Start Date: 26/03/2020 ----- Planned Complete Date: 27/03/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Finance issue mobilization advance  "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et-finance-issue-mobilization-advance"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Finance issue mobilization advance Planned Start Date: 28/03/2020 ----- Planned Complete Date: 01/04/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text=" Construction Start "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Construction on project starts Planned Start Date: 02/04/2020 ----- Planned Complete Date: 27/11/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Completion Certificate and Hand Over Form "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Project handed over to Region Planned Start Date: 28/11/2020 ----- Planned Complete Date: 04/12/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="School completion notification"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Engineering advises RMD and Finance about school completion Planned Start Date: 05/12/2020 ----- Planned Complete Date: 05/12/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="School completion notification to donor  "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="RMD advises donor about school completion Planned Start Date: 06/12/2020 ----- Planned Complete Date: 06/12/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8E26F"
+                android:gravity="center"
+                android:text="Final installment   "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText19"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Donor sends final installments of construction project (25%) Planned Start Date: 07/12/2020 ----- Planned Complete Date: 07/12/2020 Actual Start Date: Nill ----- Actual Complete Date: Nill"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
