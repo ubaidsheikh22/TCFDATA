@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,7 +16,7 @@
         android:layout_height="40dp" />
 
     <ImageView
-        android:id="@+id/submit_button"
+        android:id="@+id/submitbtn"
         android:padding="4dp"
         android:src="@android:drawable/ic_menu_send"
         android:layout_alignParentBottom="true"
@@ -30,7 +29,7 @@
         android:id="@+id/messageedittext"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/emoji_button"
-        android:layout_toLeftOf="@+id/submit_button"
+        android:layout_toLeftOf="@+id/submitbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -51,4 +50,3 @@
         android:transcriptMode="alwaysScroll"
         ></ListView>
 </RelativeLayout>
-

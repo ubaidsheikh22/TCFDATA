@@ -46,6 +46,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ChatBox extends AppCompatActivity {
 
@@ -60,7 +62,7 @@ public class ChatBox extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_box);
-        imageView = findViewById(R.id.submit_button);
+        imageView = findViewById(R.id.submitbtn);
         editText = findViewById(R.id.messageedittext);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("ChatMessage");
@@ -70,43 +72,43 @@ public class ChatBox extends AppCompatActivity {
         ////put adapter to messagelist//
 
         ////display message from database////
-       databaseReference.addChildEventListener(new ChildEventListener() {
-           @Override
-           public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-               String value = dataSnapshot.getValue(Chatmessage.class).getMessageText().toString();
-               arrayList.add(value);
-               arrayAdapter = new ArrayAdapter(ChatBox.this,R.layout.support_simple_spinner_dropdown_item,arrayList);
-               messageList.setAdapter(arrayAdapter);
-           }
+        databaseReference.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                String value = dataSnapshot.getValue(Chatmessage.class).getMessageText().toString();
+                arrayList.add(value);
+                arrayAdapter = new ArrayAdapter(ChatBox.this,R.layout.support_simple_spinner_dropdown_item,arrayList);
+                messageList.setAdapter(arrayAdapter);
+            }
 
-           @Override
-           public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
 
-           }
+            }
 
-           @Override
-           public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
 
-           }
+            }
 
-           @Override
-           public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
 
-           }
+            }
 
-           @Override
-           public void onCancelled(@NonNull DatabaseError databaseError) {
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-           }
-       });
+            }
+        });
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-            FirebaseDatabase.getInstance().getReference("ChatMessage").push().setValue(new Chatmessage(editText.getText().toString(),
-                    FirebaseAuth.getInstance().getCurrentUser().getEmail()));
-                    editText.setText("");
+                FirebaseDatabase.getInstance().getReference("ChatMessage").push().setValue(new Chatmessage(editText.getText().toString(),
+                        FirebaseAuth.getInstance().getCurrentUser().getEmail()));
+                editText.setText("");
 
             }
         });
