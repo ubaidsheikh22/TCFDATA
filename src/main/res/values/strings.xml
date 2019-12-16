@@ -38,9 +38,57 @@
         <item>Qayyumabad</item>
         <item>Baloch Colony</item>
         <item>Quiadaabad</item>
-
-
     </string-array>
+    <string-array name="FormType">
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>Window</item>
+        <item>Finishing</item>
+        <item>Plumbing</item>
+        <item>Woodwork</item>
+    </string-array>
+    <string-array name="category">
+        <item>BoundaryWall</item>
+        <item>Flood</item>
+        <item>GSP</item>
+        <item>Maintanence</item>
+        <item>Regular</item>
+        <item>SAF Program</item>
+        <item>Tank</item>
+    </string-array>
+
+    <string-array name="ProjectIncharge">
+        <item>Abid</item>
+        <item>Amir</item>
+        <item>Ashfaq</item>
+        <item>Atif</item>
+        <item>Bilal</item>
+        <item>Ghulam</item>
+        <item>M.Ali</item>
+        <item>Mirza Saleem</item>
+        <item>Moiz Mehboob</item>
+        <item>Akber</item>
+        <item>Anjum</item>
+        <item>Jawad</item>
+        <item>Younus</item>
+        <item>Saad</item>
+        <item>Saleha</item>
+        <item>Ehtisham</item>
+        <item>Usman Paracha</item>
+    </string-array>
+
+    <string-array name="Execution">
+    <item>InHouse</item>
+    <item>OutSourced</item>
+    <item>Donor</item>
+    </string-array>
+
+    <string-array name="AccountManager">
+        <item>Suleha</item>
+        <item>Ayesha</item>
+        <item>Ahsan</item>
+    </string-array>
+
     <string name="title_activity_construction_management">ConstructionManagement</string>
     <string name="navigation_open">Open navigation</string>
     <string name="navigation_close">Close navigation</string>

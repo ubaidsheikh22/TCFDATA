@@ -102,6 +102,7 @@ toggle.syncState();
             case R.id.logout:
                 Intent logout = new Intent(ConstructionPanelActivity.this,LoginActivity.class);
                 startActivity(logout);
+                this.finish();
                 break;
 
         }

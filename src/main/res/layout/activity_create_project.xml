@@ -8,6 +8,17 @@
     android:orientation="vertical"
     tools:context=".CreateProject">
 
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
@@ -35,15 +46,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
                 android:text="Location" />
 
             <TextView
@@ -112,78 +122,96 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingTop="5dp"
+            android:layout_marginLeft="30dp"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/locationtxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"/>
 
-            <Spinner
-                android:id="@+id/spinner1"
-                android:layout_width="80dp"
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
-                android:background="@android:drawable/btn_dropdown"
-                android:padding="5dp"
-                android:spinnerMode="dropdown"
-                android:textAlignment="center" />
+                android:padding="5dp"/>
+
+
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/campustxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
+
+                />
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/primarytxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
+
+                 />
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/hsecondarytxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
 
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:background="@android:drawable/btn_dropdown"
-                android:padding="5dp"
-                android:spinnerMode="dropdown"
-                android:textAlignment="center" />
-
+                 />
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/coverdtxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
+
+                 />
 
             <Spinner
-                android:id="@+id/spinner3"
-                android:layout_width="80dp"
+                android:id="@+id/Region"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:background="@android:drawable/btn_dropdown"
-                android:padding="5dp"
+
                 android:spinnerMode="dropdown"
-                android:textAlignment="center" />
+                 />
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/plotsizetxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
+
+                />
+
+            <Spinner
+                android:id="@+id/categoryspinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/btn_dropdown"
+
+                android:spinnerMode="dropdown"
+                 />
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/secondarytxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
+
+                 />
+
+            <EditText
+                android:id="@+id/projectcodetxt"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+
+               />
         </LinearLayout>
 
     </LinearLayout>
@@ -221,8 +249,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -250,38 +278,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
 
             <Spinner
-                android:id="@+id/spinner4"
-                android:layout_width="80dp"
+                android:id="@+id/projincharge"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:background="@android:drawable/btn_dropdown"
                 android:padding="5dp"
                 android:spinnerMode="dropdown"
-                android:textAlignment="center" />
+                 />
 
             <Spinner
-                android:id="@+id/spinner5"
-                android:layout_width="80dp"
+                android:id="@+id/accountmanager"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:background="@android:drawable/btn_dropdown"
                 android:padding="5dp"
                 android:spinnerMode="dropdown"
-                android:textAlignment="center" />
+                 />
 
             <Spinner
-                android:id="@+id/spinner6"
-                android:layout_width="80dp"
+                android:id="@+id/Execution"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:background="@android:drawable/btn_dropdown"
                 android:padding="5dp"
                 android:spinnerMode="dropdown"
-                android:textAlignment="center" />
+               />
         </LinearLayout>
 
     </LinearLayout>
@@ -320,8 +348,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="50dp"
-            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -330,7 +358,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Session Start Date" />
+                android:text="Session Date" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -348,7 +376,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Donor Commitment  Date" />
+                android:text="Donor Date" />
 
         </LinearLayout>
 
@@ -357,37 +385,61 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="0dp"
-            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
 
-           <DatePicker
-               android:layout_width="80dp"
-               android:layout_height="30dp"
-               android:background="@color/white"
-               android:padding="5dp"/>
+         <EditText
+             android:id="@+id/sessiondate"
+             android:layout_width="140dp"
+             android:layout_height="30dp"
+             android:padding="5dp"
+             />
+
 
             <EditText
-                android:layout_width="80dp"
+                android:id="@+id/buildyeartxt"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
                 android:padding="5dp"
-                android:textAlignment="center" />
+                />
 
-            <DatePicker
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:background="@color/white"
-                android:padding="5dp"/>
 
-            <DatePicker
-                android:layout_width="80dp"
+            <EditText
+                android:id="@+id/requestiondate"
+                android:layout_width="140dp"
                 android:layout_height="30dp"
-                android:background="@color/white"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/donordate"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                 />
+
+
         </LinearLayout>
 
     </LinearLayout>
 
+            <Button
+                android:id="@+id/createproject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/loginbutton"
+                android:drawableLeft="@drawable/ic_create_black_24dp"
+                android:text="Create"
+                android:textColor="@color/white"
+                />
+
+</LinearLayout>
+</ScrollView>
 </LinearLayout>
