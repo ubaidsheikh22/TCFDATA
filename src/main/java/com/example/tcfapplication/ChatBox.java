@@ -1,8 +1,8 @@
 package com.example.tcfapplication;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +17,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.text.format.DateFormat;
+
+import com.example.tcfapplication.Chatmessage;
+import com.example.tcfapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -46,8 +49,6 @@ import androidx.fragment.app.FragmentActivity;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ChatBox extends AppCompatActivity {
 
@@ -62,7 +63,7 @@ public class ChatBox extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_box);
-        imageView = findViewById(R.id.submitbtn);
+        imageView = findViewById(R.id.submit_button);
         editText = findViewById(R.id.messageedittext);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("ChatMessage");
@@ -77,7 +78,7 @@ public class ChatBox extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 String value = dataSnapshot.getValue(Chatmessage.class).getMessageText().toString();
                 arrayList.add(value);
-                arrayAdapter = new ArrayAdapter(ChatBox.this,R.layout.support_simple_spinner_dropdown_item,arrayList);
+                arrayAdapter = new ArrayAdapter(ChatBox.this, R.layout.support_simple_spinner_dropdown_item,arrayList);
                 messageList.setAdapter(arrayAdapter);
             }
 

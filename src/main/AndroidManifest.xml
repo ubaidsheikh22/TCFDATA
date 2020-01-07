@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:name="android.permission.READ_EXTERNAL_STORAGE"
     package="com.example.tcfapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WoodworkForm"></activity>
+        <activity android:name=".ChatBox"></activity>
+        <activity android:name=".WoodworkForm" />
         <activity android:name=".WindowsForm" />
         <activity android:name=".PlumbingForm" />
         <activity android:name=".PaintingForm" />
@@ -18,7 +21,6 @@
         <activity android:name=".ElectricalFrom" />
         <activity android:name=".Civilform" />
         <activity android:name=".Setting" />
-        <activity android:name=".ChatBox" />
         <activity android:name=".FillForm" />
         <activity android:name=".Sitevisite" />
         <activity android:name=".MainProjProgress" />
@@ -35,7 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
