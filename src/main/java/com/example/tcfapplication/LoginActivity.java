@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button loginButton;
+    Button loginButton,registerbtn;
     EditText UserEmail;
     EditText Userpassword;
     ProgressBar progressBar;
@@ -44,6 +44,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                UserAcountLogin();
+            }
+        });
+        registerbtn = findViewById(R.id.registerbtn);
+
+        registerbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                    startActivity(intent);
             }
         });
     }
@@ -71,10 +80,12 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Login As "+FirebaseAuth.getInstance().getCurrentUser().getEmail(), Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
 
                             Intent intent = new Intent(LoginActivity.this, ConstructionPanelActivity.class);
+//                            String username=FirebaseAuth.getInstance().getCurrentUser().getEmail();
+//                            intent.putExtra("username",username);
                             startActivity(intent);
 
                         }
